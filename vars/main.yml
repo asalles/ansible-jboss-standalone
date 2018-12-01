@@ -1,0 +1,18 @@
+---
+# vars file for ansible-jboss-standalone
+
+jboss_service_name: jboss-eap
+jboss_eap_user: jboss
+jboss_eap_user_home: /home/jboss
+jboss_eap_version: 7.1.0
+jboss_eap_admin_user: admin
+jboss_eap_admin_password: Cautiva1.
+jboss_eap_home_path: /opt/jboss-eap
+jboss_repo: "http://vpn.cautivatech.com/sw/jboss"
+
+jboss_eap_installer_file: jboss-eap-7.1.0-installer.jar
+jboss_eap_last_patch: [ "jboss-eap-7.1.5-patch.zip" ]
+
+java_version: 1.8
+jboss_binding_interface: eth0
+jboss_binding_management_interface: eth0

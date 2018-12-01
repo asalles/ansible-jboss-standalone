@@ -1,0 +1,17 @@
+---
+- hosts: standalone
+  remote_user: root
+  vars_files:
+    - vars/main.yml
+
+  roles:
+    - initial-tasks
+    - create-jboss-user
+    - jdk-install
+    - eap-install-dependencies
+    - eap-install-standalone-from-jar
+    - eap-standalone-service-configuration-rhel
+    - eap-standalone-configuration
+    - eap-apply-patches
+    - eap-host-firewalld
+    - final-tasks
